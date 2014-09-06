@@ -72,28 +72,22 @@
 
     
     $scope.show = function(index) {
-        //console.log(index);
+        console.log(index);
         tables = index;
-        $scope.ons.navigator.pushPage( 'order.html',{ animation : 'slide' } );
+         $scope.ons.navigator.pushPage( 'order.html',{ animation : 'slide' } );
 
     }
  
-    
-    
-    
-  });
+ });
 
   module.controller('OrderController',function($scope,$data){
     
     $scope.something =  tables;
-    $scope.choiceOne = function(index) {
+    $scope.postForm = function() {
+        console.log('postForm');
 
-     id = index;
-      $scope.ons.navigator.pushPage( 'form.html',{ animation : 'slide' } );
-
-
-    }  
-  });
+    }
+   });
 
 
   module.controller('FormController',function($scope,$data,vendorService){
