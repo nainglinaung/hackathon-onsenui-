@@ -45,20 +45,11 @@
   
   </script>
 <body>    
- <ons-sliding-menu above-page="page1.html"  behind-page="menu.html" side="left" var="menu">
-</ons-sliding-menu>
 
-
-
-
-<script type="text/ons-template" id="page1.html">
  
   <ons-navigator title="Navigator" var="myNavigator" >
     <ons-page ng-controller="AdminController">
       <ons-toolbar>
-      <div class="left">
-        <ons-toolbar-button onclick="menu.toggleMenu()"><ons-icon icon="fa-bars"></ons-icon></ons-toolbar-button>
-      </div>
       <div class="center">Page 2</div>
       <div class="right"> notification </div>
     </ons-toolbar>
@@ -69,8 +60,7 @@
       <div class="sample"> 
           <br/><br/><br/>
           <div class="middle"><ons-button ng-click="showSubmit()"  modifier="cta" align="center">Submit</ons-button></div>
-         
-      </div>
+       </div>
       <img src="images/sample.jpg" />
       
 
@@ -79,9 +69,6 @@
     </ons-page>
   </ons-navigator>
 
-
-
-</script>
 
 
 
