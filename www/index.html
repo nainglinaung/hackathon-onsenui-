@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <title>My App</title>  
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.0.0/css/bootstrap-datetimepicker.css">
+  <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.css">
+
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
+  <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css"> 
+    <link rel="stylesheet" href="styles/style.css"/>
+
+  <link rel="stylesheet" href="styles/app.css"/> 
+
+
+  <script src="lib/onsen/js/angular/angular.js"></script>    
+  <script src="lib/onsen/js/onsenui.js"></script>    
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.0.0/js/bootstrap-datetimepicker.js"></script>
+  <script src="https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.js"></script> 
+
+  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  
+  <script src="js/draggable_background.js"></script>
+  <script src="js/script.js"></script>
+  <script src="cordova.js"></script>
+  <script src="js/app.js"></script> 
+  
+</head>
+ 
+  <script>
+    ons.ready(function() {});
+
+
+  </script>
+  <script>
+  
+  </script>
+<body>    
+ <ons-sliding-menu above-page="page1.html"  behind-page="menu.html" side="left" var="menu">
+</ons-sliding-menu>
+
+<script type="text/ons-template" id="page1.html">
+ 
+  <ons-navigator title="Navigator" var="myNavigator" >
+    <ons-page ng-controller="AdminController">
+      <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="menu.toggleMenu()"><ons-icon icon="fa-bars"></ons-icon></ons-toolbar-button>
+      </div>
+      <div class="center">Page 2</div>
+      <div class="right"> notification </div>
+    </ons-toolbar>
+
+    <h1 style="text-align: center">Nearest Location</h1>
+   <ons-list class="box_sd_none list_bd">
+    
+      <div class="sample"> 
+          <br/><br/><br/>
+          <div class="middle"><ons-button ng-click="showSubmit()"  modifier="cta" align="center">Submit</ons-button></div>
+         
+      </div>
+      <img src="images/sample.jpg" />
+      
+
+      
+    </ons-list>
+    </ons-page>
+  </ons-navigator>
+
+
+
+</script>
+
+
+
+
+<script type="text/ons-template" id="page2.html">
+
+ 
+ 
+
+  
+</script>
+
+<script type="text/ons-template" id="menu.html">
+  <ons-list>
+    <ons-list-item modifier="chevron" onclick="menu.setAbovePage('page1.html', {closeMenu: true})">
+      page1.html
+    </ons-list-item>
+    <ons-list-item modifier="chevron" onclick="menu.setAbovePage('page2.html', {closeMenu: true})">
+      Nearest Location
+    </ons-list-item>
+  </ons-list>
+</script>
+
+
+
+<script type="text/ons-template" id="reserve.html"> 
+  <ons-page ng-controller="ReserveController">
+     <ons-list class="box_sd_none list_bd">
+          <img ng-click="showOrder(1)" src="images/sample.jpg" /><br>
+          <img ng-click="showOrder(2)" src="images/sample.jpg" /><br>
+          <img ng-click="showOrder(3)" src="images/sample.jpg" /><br>
+          <img ng-click="showOrder(4)" src="images/sample.jpg" /><br>
+          <img ng-click="showOrder(5)" src="images/sample.jpg" /><br>
+       </ons-list>
+    
+  </ons-page>
+  
+</script>
+
+<script type="text/ons-template" id="order.html"> 
+
+  <ons-page ng-controller="OrderController">
+      <ons-list class="box_sd_none list_bd" ng-repeat="data in something">
+    
+          <ons-list-item ng-click="choiceOne(data)" > {{data}} </ons-list-item>
+      </ons-list>
+   
+  </ons-page>
+
+
+</script>
+
+
+<script type="text/ons-template" id="form.html">
+     
+  <ons-page ng-controller="FormController">
+       <ons-list class="box_sd_none list_bd">
+            <form>
+            <section style="padding: 0 8px 8px">
+            <input type="text" class="text-input" ng-model="customer_name" placeholder="Type Username" style="display: block; width: 100%">
+            </section>
+            <section style="padding: 0 8px 8px">
+            <input type="text" class="text-input" ng-model="number" placeholder="Type Phone Number" style="display: block; width: 100%">
+            </section>
+            <section style="padding: 0 8px 8px">
+            <textarea class="textarea" ng-model="order" placeholder="Type your Order" style="width: 100%; height: 100px;"></textarea>
+            </section>
+            <section style="padding: 0 8px 8px">
+            <textarea class="textarea" ng-model="special" placeholder="Type your special feature" style="width: 100%; height: 100px;"></textarea>
+            </section>
+            <section style="padding: 0 8px 8px">
+            <input id="timepicker1" type="text" class="input-small">
+            </section>
+            <section style="padding: 0 8px 8px">
+            <ons-button modifier="large" ng-click="postForm()">Submit</ons-button>
+            </section>
+            
+            </form>
+
+      </ons-list>
+  </ons-page>
+</script>
+
+
+
+
+</body>
+</html>

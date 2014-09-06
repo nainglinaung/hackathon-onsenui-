@@ -1,0 +1,33 @@
+2014-09-06 10:16:53.436 HelloCordova[1441:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-06 10:16:53.465 HelloCordova[1441:70b] Unlimited access to network resources
+2014-09-06 10:16:53.467 HelloCordova[1441:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-09-06 10:16:53.776 HelloCordova[1441:70b] Resetting plugins due to page load.
+2014-09-06 10:17:05.644 HelloCordova[1441:70b] Finished load of: file:///Users/hivelocity/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/A00385F4-A453-430E-89D6-58B03F650B63/HelloCordova.app/www/index.html
+2014-09-06 10:18:00.124 HelloCordova[1630:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-06 10:18:00.129 HelloCordova[1630:70b] Unlimited access to network resources
+2014-09-06 10:18:00.131 HelloCordova[1630:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-09-06 10:18:00.166 HelloCordova[1630:70b] Resetting plugins due to page load.
+2014-09-06 10:18:01.701 HelloCordova[1630:70b] Finished load of: file:///Users/hivelocity/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/A00385F4-A453-430E-89D6-58B03F650B63/HelloCordova.app/www/index.html
+2014-09-06 10:45:09.676 HelloCordova[764:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-06 10:45:09.698 HelloCordova[764:70b] Unlimited access to network resources
+2014-09-06 10:45:09.701 HelloCordova[764:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-09-06 10:45:09.970 HelloCordova[764:70b] Resetting plugins due to page load.
+2014-09-06 10:45:20.251 HelloCordova[764:70b] Finished load of: file:///Users/hivelocity/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/A00385F4-A453-430E-89D6-58B03F650B63/HelloCordova.app/www/index.html

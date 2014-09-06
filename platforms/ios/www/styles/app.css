@@ -1,0 +1,13 @@
+.page-right-border {
+  border-right: 1px solid #ccc;
+}
+
+.sample {
+	width: 100%;
+	height:200px;
+	background:url("../sample.jpg");
+}
+
+.middle {
+	text-align: center;
+}
