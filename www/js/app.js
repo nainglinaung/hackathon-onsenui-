@@ -70,44 +70,15 @@
 
   module.controller('ReserveController',function($scope,$data){
 
-    var num1 = [0,1,2,3,4,5,6,7];
-    var num2 = [8,9,10,11,12,13,14,15];
-    var num3 = [16,17,18,19,20,21,22,23];
-    var num4 = [24,25,26,27,28,29,30,31];
-    var num5 = [8,9,10,11,12,13,14,15];
-    var num6 = [0,0,0,0,0,0,0];
-
-    $scope.showOrder = function(index){
-      console.log(index);
-
-      switch(index) {
-      
-      case 1:
-          tables = num1;
-          break;
-      case 2:
-           tables = num2;
-          break;
-      case 3:
-           tables = num3;
-          break;
-      case 4:
-           tables = num4;
-          break; 
-      case 5:
-           tables = num5;
-          break; 
-      case 6:
-           tables = num6;
-          break;         
-      default:
-          tables = 1;
-    }
-    $scope.tables =  tables;
-
-    $scope.ons.navigator.pushPage( 'order.html',{ animation : 'slide' } );
+    
+    $scope.show = function(index) {
+        //console.log(index);
+        tables = index;
+        $scope.ons.navigator.pushPage( 'order.html',{ animation : 'slide' } );
 
     }
+ 
+    
     
     
   });
