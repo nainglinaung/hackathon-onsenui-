@@ -50,11 +50,11 @@
   <ons-navigator title="Navigator" var="myNavigator" >
     <ons-page ng-controller="AdminController">
       <ons-toolbar>
-      <div class="center">Page 2</div>
-      <div class="right"> notification </div>
+      <div class="center">Home</div>
+      <!-- <div class="right"> notification </div> -->
     </ons-toolbar>
 
-    <h1 style="text-align: center">Nearest Location</h1>
+    <h1 style="text-align: center">Tomato</h1>
    <ons-list class="box_sd_none list_bd">
     
       <div class="sample"> 
@@ -74,11 +74,12 @@
 
 
 <script type="text/ons-template" id="page2.html">
-
+  <ons-page>
+    <ons-list>
+        asdasd
  
- 
-
-  
+    </ons-list>  
+  </ons-page>
 </script>
 
 <script type="text/ons-template" id="menu.html">
@@ -125,21 +126,7 @@
 <script type="text/ons-template" id="order.html"> 
 
   <ons-page ng-controller="OrderController">
-      <ons-list class="box_sd_none list_bd" ng-repeat="data in something">
-    
-          <ons-list-item ng-click="choiceOne(data)" > adssadasd</ons-list-item>
-      </ons-list>
-   
-  </ons-page>
-
-
-</script>
-
-
-<script type="text/ons-template" id="form.html">
-     
-  <ons-page ng-controller="FormController">
-       <ons-list class="box_sd_none list_bd">
+    <ons-list class="box_sd_none list_bd">
             <form>
             <section style="padding: 0 8px 8px">
             <input type="text" class="text-input" ng-model="customer_name" placeholder="Type Username" style="display: block; width: 100%">
@@ -163,6 +150,16 @@
             </form>
 
       </ons-list>
+  </ons-page>
+
+
+</script>
+
+
+<script type="text/ons-template" id="form.html">
+     
+  <ons-page ng-controller="FormController">
+      
   </ons-page>
 </script>
 
